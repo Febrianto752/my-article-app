@@ -1,6 +1,6 @@
 @import "_utils.css";
 @import "_fonts.css";
-@import "_responsive";
+@import "_responsive.css";
 
 :root {
   --extra-light: 300;
@@ -13,6 +13,10 @@
   --primary-color: #1f4ba1;
   --secondary-color: #e1e8f5;
   --third-color: #ededed;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -68,7 +72,6 @@ nav a {
 
 main {
   padding-top: 70px;
-  padding-bottom: 70px;
 }
 
 .content {
@@ -95,16 +98,22 @@ article section {
 
 article img {
   margin-bottom: 16px;
+  width: 400px;
 }
 
 article section p {
   text-align: justify;
 }
 
+.table-wrapper {
+  display: block;
+  overflow-x: auto !important;
+}
+
 table {
-  width: 100%;
   border: 0;
   border-spacing: 0;
+  width: fit-content;
 }
 
 table th {
@@ -133,10 +142,6 @@ table tr td:last-child {
 table tbody tr:nth-child(even) {
   background-color: var(--third-color);
 }
-
-/* table tr td:last-child{
-  width: 40%;
-} */
 
 aside {
   margin-left: 40px;
@@ -205,4 +210,13 @@ aside p {
   cursor: pointer;
   transform: translateY(-16px);
   box-shadow: 0 0 10px 2px rgba(0, 65, 134, 0.5);
+}
+
+footer {
+  padding: 22px;
+  color: white;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
 }

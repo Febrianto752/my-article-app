@@ -1,12 +1,3 @@
-:root {
-  --extra-light: 300;
-  --light: 400;
-  --regular: 500;
-  --medium: 600;
-  --semi-bold: 700;
-  --bold: 800;
-}
-
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins/Poppins-ExtraLight.ttf");

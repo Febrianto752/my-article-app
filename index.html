@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>My Article</title>
+    <title>My Article App</title>
   </head>
   <body>
     <header>
       <nav class="container">
         <div class="brand">My Article</div>
-        <a href="#">Articles</a>
+        <a href="#other-article">Articles</a>
       </nav>
 
       <section class="banner container">
@@ -36,12 +36,12 @@
               &raquo; &nbsp;
             </li>
             <li>
-              <a href="#sub-judul-3"
-                >Comparison Table Between Django and Laravel</a
-              >
-              &raquo;
+              <a href="#sub-judul-4"
+                >Comparison Table Between Django and Laravel
+              </a>
+              &raquo; &nbsp;
             </li>
-            <li><a href="#sub-judul-4">Conclusion</a></li>
+            <li><a href="#sub-judul-5">Conclusion</a></li>
           </ul>
 
           <section>
@@ -51,7 +51,6 @@
               class="d-block"
               src="./assets/images/django_vs_laravel.png"
               alt="judul"
-              width="460"
             />
             <p>
               The choice of a web framework like Django vs Laravel is one of the
@@ -66,13 +65,9 @@
             </p>
           </section>
 
-          <section>
+          <section id="sub-judul-1">
             <h2>Django</h2>
-            <img
-              src="./assets/images/logo_django.png"
-              alt="django logo"
-              width="400"
-            />
+            <img src="./assets/images/logo_django.png" alt="django logo" />
             <p>
               The Django Software Foundation developed the Django framework.
               Django was initially released in the year 2005. Django was
@@ -88,12 +83,8 @@
           </section>
 
           <section>
-            <h2>Laravel</h2>
-            <img
-              src="./assets/images/logo_laravel.png"
-              alt="laravel logo"
-              width="400"
-            />
+            <h2 id="sub-judul-2">Laravel</h2>
+            <img src="./assets/images/logo_laravel.png" alt="laravel logo" />
             <p>
               Laravel was created and developed by Taylor Otwell. MIT License
               licensed Laravel. It was initially released in the year 2011.
@@ -106,7 +97,7 @@
               scratch in an easier way.
             </p>
           </section>
-          <section>
+          <section id="sub-judul-3">
             <h2>Key Differences Between Django and Laravel</h2>
             <p class="mb-4">
               Below are the lists of points, describe the key differences
@@ -170,74 +161,76 @@
             </ol>
           </section>
 
-          <section>
+          <section id="sub-judul-4">
             <h2>Comparison Table Between Django and Laravel</h2>
 
             <p class="mb-4">
               Following is the comparison table between Django and Laravel
               performance.
             </p>
-
-            <table>
-              <thead>
-                <tr>
-                  <th>Parameter</th>
-                  <th>Django</th>
-                  <th>Laravel</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Definition</td>
-                  <td>
-                    It is a Full Stack web application framework written in
-                    Python
-                  </td>
-                  <td>
-                    It is a Full Stack web application framework written in PHP
-                  </td>
-                </tr>
-                <tr>
-                  <td>Maintenance</td>
-                  <td>It is maintained by Django Software Foundation</td>
-                  <td>
-                    It is being maintained by the developer itself and their
-                    community under MIT license.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Architecture</td>
-                  <td>It is a Model View Template (MVT) model</td>
-                  <td>It is a Model View Controller (MVC) model</td>
-                </tr>
-                <tr>
-                  <td>Platform</td>
-                  <td>It supports cross-platform</td>
-                  <td>It supports cross-platform</td>
-                </tr>
-                <tr>
-                  <td>Generality</td>
-                  <td>
-                    It has a rapid development feature with a great community
-                    users group
-                  </td>
-                  <td>
-                    It has clean architecture and a growing community base
-                  </td>
-                </tr>
-                <tr>
-                  <td>Scalability</td>
-                  <td>Supports high scalability</td>
-                  <td>
-                    Laravel also supports high scalability, but the only
-                    difference is the language used to write the framework.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Parameter</th>
+                    <th>Django</th>
+                    <th>Laravel</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Definition</td>
+                    <td>
+                      It is a Full Stack web application framework written in
+                      Python
+                    </td>
+                    <td>
+                      It is a Full Stack web application framework written in
+                      PHP
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Maintenance</td>
+                    <td>It is maintained by Django Software Foundation</td>
+                    <td>
+                      It is being maintained by the developer itself and their
+                      community under MIT license.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Architecture</td>
+                    <td>It is a Model View Template (MVT) model</td>
+                    <td>It is a Model View Controller (MVC) model</td>
+                  </tr>
+                  <tr>
+                    <td>Platform</td>
+                    <td>It supports cross-platform</td>
+                    <td>It supports cross-platform</td>
+                  </tr>
+                  <tr>
+                    <td>Generality</td>
+                    <td>
+                      It has a rapid development feature with a great community
+                      users group
+                    </td>
+                    <td>
+                      It has clean architecture and a growing community base
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Scalability</td>
+                    <td>Supports high scalability</td>
+                    <td>
+                      Laravel also supports high scalability, but the only
+                      difference is the language used to write the framework.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
 
-          <section>
+          <section id="sub-judul-5">
             <h2>Conclusion</h2>
 
             <p>
@@ -323,6 +316,13 @@
         </div>
       </section>
     </main>
+
+    <footer class="container">
+      <p>&copy;Copyright 2022, All Right Reserved.</p>
+      <p>
+        Material content comes from https://www.educba.com/django-vs-laravel/
+      </p>
+    </footer>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
