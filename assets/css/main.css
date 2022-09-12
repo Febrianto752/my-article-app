@@ -1,0 +1,165 @@
+@import "_utils.css";
+@import "_fonts.css";
+@import "_responsive";
+
+:root {
+  --extra-light: 300;
+  --light: 400;
+  --regular: 500;
+  --medium: 600;
+  --semi-bold: 700;
+  --bold: 800;
+
+  --primary-color: #1f4ba1;
+  --secondary-color: #e1e8f5;
+  --third-color: #ededed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.banner {
+  padding-bottom: 120px;
+  padding-top: 64px;
+  background-color: var(--secondary-color);
+  font-size: 48px;
+  font-weight: var(--bold);
+  color: white;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+main {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.content {
+  display: flex;
+}
+
+.content article:first-child {
+  flex-basis: 75%;
+}
+
+.breadcrumb a {
+  color: gray;
+}
+
+article section h1,
+article section h2 {
+  margin-bottom: 8px;
+}
+
+article section {
+  margin-top: 20px;
+}
+
+article img {
+  margin-bottom: 16px;
+}
+
+article section p {
+  text-align: justify;
+}
+
+table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+}
+
+table th {
+  color: white;
+}
+
+table th,
+table td {
+  padding: 14px 10px 18px;
+  margin: 0;
+}
+
+table thead {
+  background-color: var(--primary-color);
+}
+
+table tr td:first-child {
+  width: 20%;
+}
+
+table tr td:nth-child(2),
+table tr td:last-child {
+  width: 40%;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--third-color);
+}
+
+/* table tr td:last-child{
+  width: 40%;
+} */
+
+aside {
+  margin-left: 40px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 24px 20px 40px;
+  height: fit-content;
+}
+
+aside p {
+  margin-top: 10px;
+  color: gray;
+}
+
+.img-profile {
+  margin-top: 32px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-profile + figcaption {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: var(--semi-bold);
+}
