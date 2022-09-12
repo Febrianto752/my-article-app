@@ -38,3 +38,20 @@
 .text-justify {
   text-align: justify;
 }
+
+.text-overflow-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.text-overflow-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fade {
+  opacity: 1 !important;
+}
